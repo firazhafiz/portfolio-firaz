@@ -1,3 +1,5 @@
+"use client";
+
 import { HoverEffect } from "./ui/card-hover";
 import {
   SiHtml5,
@@ -20,6 +22,7 @@ import {
   SiFirebase,
 } from "react-icons/si";
 import { FaDesktop, FaServer, FaMobileAlt, FaDatabase } from "react-icons/fa";
+import { motion } from "motion/react";
 
 const techStackItems = [
   {
@@ -76,12 +79,18 @@ const techStackItems = [
 
 const TechStack = () => {
   return (
-    <section className="w-full max-w-6xl mx-auto pt-12 px-4">
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full max-w-6xl mx-auto pt-12 px-4"
+    >
       <h2 className="text-4xl font-bold text-center mb-6 text-white">
         Tech Stack
       </h2>
       <HoverEffect items={techStackItems} />
-    </section>
+    </motion.section>
   );
 };
 

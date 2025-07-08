@@ -74,10 +74,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div className="w-full font-sans" ref={containerRef}>
       <div className="max-w-6xl mx-auto pb-20 pt-14 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl font-bold text-black dark:text-white max-w-4xl">
+        <h2 className="text-lg md:text-4xl font-bold text-white max-w-4xl">
           Changelog from my journey
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mt-2 max-w-lg">
+        <p className="text-neutral-300 text-sm md:text-sm mt-2 max-w-lg">
           I&apos;ve been immersed as a student developer at State University of
           Surabaya for nearly 3 years, and these are some of the experiences I
           have undertaken.

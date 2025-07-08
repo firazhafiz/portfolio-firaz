@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import CardStatic from "./ui/card-static";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const certifications = [
   {
@@ -79,7 +80,13 @@ const Certifications = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto py-12 px-4">
+    <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full max-w-6xl mx-auto py-12 px-4"
+    >
       <h2 className="text-3xl md:text-4xl mb-10 md:mb-16 font-bold text-center text-white mt-12">
         Certifications
       </h2>
@@ -123,7 +130,7 @@ const Certifications = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

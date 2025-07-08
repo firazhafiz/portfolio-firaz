@@ -11,6 +11,7 @@ import {
   FaRegCopy,
 } from "react-icons/fa";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const EMAIL = "firazfulvianhafiz05@gmail.com";
 const PHONE = "0823-3267-6848";
@@ -34,7 +35,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full max-w-3xl mx-auto py-20 px-4 flex flex-col items-center relative">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full max-w-3xl mx-auto py-20 px-4 flex flex-col items-center relative"
+    >
       <button className="mb-6 px-6 py-2 rounded-full bg-white/10 text-white font-semibold shadow transition">
         Let&apos;s Connect
       </button>
@@ -46,7 +53,7 @@ const Contact = () => {
         connect through any platform below. I&apos;m always open for new
         opportunities, discussions, or a friendly chat!
       </p>
-      <div className="absolute left-0 right-0 top-[280px] md:top-[120px] w-full flex justify-center z-0 pointer-events-none select-none opacity-60">
+      <div className="absolute left-0 right-0 top-[280px] md:top-[120px] w-full flex justify-center z-0 pointer-events-none select-none opacity-100">
         <Image
           src="/assets/grid.svg"
           alt="Grid"
@@ -114,7 +121,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export function WorkTimeline() {
   const data = [
@@ -9,7 +12,7 @@ export function WorkTimeline() {
       time: "2024 - 2025",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
             As a core team member, I am a part of the creative media division
             and serve as a co-director. My responsibilities include creating
             content planning and managing all aspects of publication needs and
@@ -58,7 +61,7 @@ export function WorkTimeline() {
       time: "2025",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
             Created a cloned website for ACARA, an online event ticket
             purchasing platform, as part of the WPU Course. I worked on it
             systematically, starting with the backend, API development, and
@@ -107,7 +110,7 @@ export function WorkTimeline() {
       time: "2025",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal md:text-sm text-neutral-200">
             I served as a graphic designer and participated in covering events
             for Hai.Volunteer partners. Additionally, I handled the editing
             process for various Instagram feed and reel contents.
@@ -151,8 +154,14 @@ export function WorkTimeline() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="relative w-full overflow-clip"
+    >
       <Timeline data={data} />
-    </div>
+    </motion.div>
   );
 }

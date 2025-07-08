@@ -1,9 +1,18 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <section className="relative w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-16 px-4 md:px-12 bg-black-100 rounded-xl shadow-lg mt-10">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="relative w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-16 px-4 md:px-12 bg-black-100 rounded-xl shadow-lg mt-10"
+    >
       <div className="flex-shrink-0 flex justify-center items-center">
         <Image
           src="/images/firaznikol.jpg"
@@ -39,7 +48,7 @@ const About = () => {
           creative flair.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
