@@ -92,7 +92,7 @@ export function ThreeDCardDemo() {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mt-12">
@@ -104,7 +104,7 @@ export function ThreeDCardDemo() {
             key={idx}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.5, delay: idx * 0.15, ease: "easeOut" }}
           >
             <CardContainer className="inter-var">
