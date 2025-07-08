@@ -34,15 +34,15 @@ export function ThreeDCardDemo() {
       ],
     },
     {
-      title: "Diary Food",
+      title: "Nesavent",
       description:
-        "A website used as inspiration for finding various local and international recipes for food and drinks.",
+        "Landing page website for an event management platform at Surabaya State University.",
       details: [
-        "Developed using Next.js for the frontend, Express.js for the backend, and Prisma as the ORM.",
-        "Integrated with AI to enhance user experience with more accurate recipe searches.",
-        "Supported by real-time interactive technology and equipped with features such as recipe uploads, bookmarks, comments, and recipe sharing.",
+        "Frontend design utilizes Tailwind CSS and is developed using the Next.js framework with React technology.",
+        "Features cards for selecting events and recommendations for available events, both internal and external.",
+        "The home section includes a modern search bar to help users easily find events they want to participate in.",
       ],
-      image: "../assets/diaryfood.png",
+      image: "../assets/nesavent.png",
       imageAlt: "thumbnail",
       actions: [
         {
@@ -53,21 +53,22 @@ export function ThreeDCardDemo() {
         {
           type: "button",
           label: "Github",
+          href: "https://github.com/firazhafiz/landingpage-nesavent",
           className:
             "px-4 py-2 rounded-full bg-black dark:bg-white dark:text-black cursor-pointer text-white text-xs font-bold",
         },
       ],
     },
     {
-      title: "Diary Food",
+      title: "Personal Portfolio",
       description:
-        "A website used as inspiration for finding various local and international recipes for food and drinks.",
+        "A personal portfolio website to document my journey and track record as a programmer.",
       details: [
-        "Developed using Next.js for the frontend, Express.js for the backend, and Prisma as the ORM.",
-        "Integrated with AI to enhance user experience with more accurate recipe searches.",
-        "Supported by real-time interactive technology and equipped with features such as recipe uploads, bookmarks, comments, and recipe sharing.",
+        "An interactive single-page website developed using React.js technology with the Next.js framework.",
+        "Modern styling with the Aceternity UI motion framework, combined with custom styles using Tailwind CSS.",
+        "Features include a home section, about section, timeline section, projects section, certificates section, contact section, and footer.",
       ],
-      image: "../assets/diaryfood.png",
+      image: "../assets/portfoliofiraz.png",
       imageAlt: "thumbnail",
       actions: [
         {
@@ -78,6 +79,7 @@ export function ThreeDCardDemo() {
         {
           type: "button",
           label: "Github",
+          href: "https://github.com/firazhafiz/portfolio-firaz",
           className:
             "px-4 py-2 cursor-pointer rounded-full bg-black dark:bg-white dark:text-black text-white text-xs font-bold",
         },

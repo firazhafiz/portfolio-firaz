@@ -6,7 +6,7 @@ const About = () => {
     <section className="relative w-full flex flex-col md:flex-row items-center justify-center gap-20 py-16 px-4 md:px-12 bg-black-100 rounded-xl shadow-lg mt-10">
       <div className="flex-shrink-0 flex justify-center items-center">
         <Image
-          src="/images/mirror.jpg"
+          src="/images/firaznikol.jpg"
           alt="Firaz's photo"
           width={350}
           height={350}

@@ -5,6 +5,7 @@ import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import { WorkTimeline } from "@/components/Timeline";
 import { ThreeDCardDemo } from "@/components/Project";
+import Certifications from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <TechStack />
         <WorkTimeline />
         <ThreeDCardDemo />
+        <Certifications />
       </div>
     </main>
   );
