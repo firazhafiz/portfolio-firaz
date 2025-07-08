@@ -11,7 +11,7 @@ interface TimelineEntry {
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
+  const [, setHeight] = useState(0);
   const [firstCircleTop, setFirstCircleTop] = useState(0);
   const [lastCirclePosition, setLastCirclePosition] = useState(0);
 
@@ -78,7 +78,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Changelog from my journey
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-sm mt-2 max-w-lg">
-          I've been immersed as a student developer at State University of
+          I&apos;ve been immersed as a student developer at State University of
           Surabaya for nearly 3 years, and these are some of the experiences I
           have undertaken.
         </p>
