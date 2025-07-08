@@ -34,7 +34,7 @@ const Hero = () => {
             words="Exploring the Future, One Idea at a Time"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-md">
+          <h3 className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-md">
             I'm <span className="font-bold">Firaz Fulvian Hafiz</span>, a
             <ContainerTextFlip
               words={[
@@ -44,11 +44,15 @@ const Hero = () => {
               ]}
             />{" "}
             based in Surabaya, East Java, Indonesia.
-          </p>
+          </h3>
 
-          <Link href="#about">
+          <Link
+            href="https://drive.google.com/file/d/1Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
-              title="Show More"
+              title="Download CV"
               icon={<FaLocationArrow />}
               position="right"
             />

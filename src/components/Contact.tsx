@@ -39,7 +39,7 @@ const Contact = () => {
         Let&apos;s Connect
       </button>
       <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-4">
-        Get in Touch
+        Get in <span className="text-purple-300">Touch</span>
       </h2>
       <p className="text-neutral-300 text-center max-w-xl mb-10 text-base md:text-lg">
         Ready to collaborate or just want to say hi? Drop me a message or
