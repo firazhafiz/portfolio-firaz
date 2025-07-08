@@ -22,8 +22,8 @@ const About = () => {
           As an Informatics Engineering student at Universitas Negeri Surabaya,
           I am a passionate and self-driven developer with a flair for
           full-stack development, specializing in React.js and Node.js. Since
-          embarking on my web development journey in 2023, I've immersed myself
-          in creating intuitive, pixel-perfect interfaces and robust,
+          embarking on my web development journey in 2023, I&apos;ve immersed
+          myself in creating intuitive, pixel-perfect interfaces and robust,
           high-performance applications. Now, in my early thirties, I leverage
           cutting-edge tools like Next.js, TypeScript, Tailwind CSS, Laravel,
           and Supabase to craft seamless digital experiences that blend
@@ -33,10 +33,10 @@ const About = () => {
           Now in my early thirties, I leverage a powerful stack of modern
           technologies including Next.js, TypeScript, Tailwind CSS, Laravel, and
           Supabase to build cutting-edge web applications that push the
-          boundaries of innovation. Over the past two years, I've evolved from a
-          budding developer into a confident creator, taking on increasingly
-          ambitious projects that demand both technical rigor and creative
-          flair.
+          boundaries of innovation. Over the past two years, I&apos;ve evolved
+          from a budding developer into a confident creator, taking on
+          increasingly ambitious projects that demand both technical rigor and
+          creative flair.
         </p>
       </div>
     </section>

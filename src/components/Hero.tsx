@@ -35,7 +35,7 @@ const Hero = () => {
           />
 
           <h3 className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-md">
-            I'm <span className="font-bold">Firaz Fulvian Hafiz</span>, a
+            I&apos;m <span className="font-bold">Firaz Fulvian Hafiz</span>, a
             <ContainerTextFlip
               words={[
                 "Fullstack Developer",

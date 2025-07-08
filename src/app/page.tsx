@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { FaHome } from "react-icons/fa";
 import About from "@/components/About";
 import TechStack from "@/components/TechStack";
 import { WorkTimeline } from "@/components/Timeline";
