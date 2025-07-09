@@ -55,7 +55,7 @@ const certifications = [
   },
   {
     image: "/images/pzntypescript.jpg",
-    title: "Pemograman TypeScript : Pemula sampai Mahir",
+    title: "Pemrograman TypeScript : Pemula sampai Mahir",
     author: "Progammer Zaman Now",
     credentialUrl:
       "https://www.udemy.com/certificate/UC-9a07da83-6e60-4cd2-aeb6-b4a894adb681/",

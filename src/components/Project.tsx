@@ -45,6 +45,7 @@ export function ThreeDCardDemo() {
       ],
       image: "../assets/nesavent.png",
       imageAlt: "thumbnail",
+      live: "https://nesavent.vercel.app/",
       actions: [
         {
           type: "link",
