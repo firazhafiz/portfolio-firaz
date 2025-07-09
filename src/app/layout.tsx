@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Firaz | Fullstack Developer",
+  title: "Firaz Fulvian Hafiz | Fullstack Developer",
   description: "Portfolio of Firaz",
 };
 

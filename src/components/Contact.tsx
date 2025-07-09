@@ -53,12 +53,12 @@ const Contact = () => {
         connect through any platform below. I&apos;m always open for new
         opportunities, discussions, or a friendly chat!
       </p>
-      <div className="absolute left-0 right-0 top-[280px] md:top-[120px] w-full flex justify-center z-0 pointer-events-none select-none opacity-100">
+      <div className="absolute left-0 right-0 bottom-0 md:top-[120px] w-full flex justify-center z-0 pointer-events-none select-none opacity-50">
         <Image
           src="/assets/grid.svg"
           alt="Grid"
-          width={1500}
-          height={800}
+          width={1000}
+          height={600}
           className="object-contain w-full max-w-2xl h-auto"
           draggable={false}
           priority={false}

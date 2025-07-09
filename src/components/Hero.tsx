@@ -46,9 +46,9 @@ const Hero = () => {
           </h3>
 
           <Link
-            href="https://drive.google.com/file/d/1Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw2Qw/view?usp=sharing"
-            target="_blank"
+            href="https://drive.google.com/file/d/1We8S3WJP2_PSFUzpPYvv53iw0ieAWQVz/view?usp=sharing"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <Button
               title="Download CV"

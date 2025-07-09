@@ -18,6 +18,7 @@ export function ThreeDCardDemo() {
       ],
       image: "../assets/diaryfood.png",
       imageAlt: "thumbnail",
+      live: "https://diary-food1222.vercel.app/",
       actions: [
         {
           type: "link",
@@ -28,7 +29,6 @@ export function ThreeDCardDemo() {
           type: "button",
           label: "Github",
           href: "https://github.com/firazhafiz/FE-DiaryFood",
-
           className:
             "px-4 py-2 rounded-full bg-white text-black text-xs font-bold cursor-pointer",
         },
@@ -71,6 +71,7 @@ export function ThreeDCardDemo() {
       ],
       image: "../assets/portfoliofiraz.png",
       imageAlt: "thumbnail",
+      live: "https://razdev-navy.vercel.app/",
       actions: [
         {
           type: "link",
@@ -160,31 +161,56 @@ export function ThreeDCardDemo() {
                     ))}
                   </CardItem>
                 )}
-                <div className="flex justify-between items-center mt-auto">
-                  {card.actions.map((action, aidx) =>
-                    action.href ? (
-                      <CardItem
-                        key={aidx}
-                        translateZ={20}
-                        as="a"
-                        href={action.href}
+                <div className="flex justify-between items-center mt-auto gap-2 w-full">
+                  <div>
+                    {card.actions
+                      .filter((action) => action.label === "Check this →")
+                      .map((action, aidx) => (
+                        <CardItem
+                          key={aidx}
+                          translateZ={20}
+                          as="a"
+                          href={action.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={action.className}
+                        >
+                          {action.label}
+                        </CardItem>
+                      ))}
+                  </div>
+                  <div className="flex gap-3">
+                    {/* Button Live jika ada */}
+                    {card.live && (
+                      <a
+                        href={card.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={action.className}
+                        className="px-4 py-2 rounded-full bg-white text-black text-xs font-bold cursor-pointer transition hover:bg-neutral-200 focus:outline-none"
+                        style={{ display: "inline-block" }}
                       >
-                        {action.label}
-                      </CardItem>
-                    ) : (
-                      <CardItem
-                        key={aidx}
-                        translateZ={20}
-                        as="button"
-                        className={action.className}
-                      >
-                        {action.label}
-                      </CardItem>
-                    )
-                  )}
+                        Live
+                      </a>
+                    )}
+                    {/* Button Github */}
+                    {card.actions
+                      .filter((action) => action.label === "Github")
+                      .map((action, aidx) => (
+                        <a
+                          key={aidx}
+                          href={action.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={
+                            action.className +
+                            " transition hover:bg-neutral-200 focus:outline-none "
+                          }
+                          style={{ display: "inline-block" }}
+                        >
+                          {action.label}
+                        </a>
+                      ))}
+                  </div>
                 </div>
               </CardBody>
             </CardContainer>
